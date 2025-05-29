@@ -520,6 +520,8 @@ Train_EnvstepsSoFar : 0
 TimeSinceStart : 259.30706882476807
 Initial_DataCollection_AverageReturn : 5383.310325177668
 
+loss keeps decreasing until after 64k train steps per iteration, then increases
+
 why increasing training steps help improve result
 Training Process
 Each step:
@@ -548,3 +550,318 @@ Plan to determine optimal training steps
 - Eval return saturates
 - Overfitting detected (eval < train)
 
+
+====================================
+
+python cs285/scripts/run_hw1.py --expert_policy_file cs285/policies/experts/Ant.pkl --env_name Ant-v4 --exp_name dagger_ant --n_iter 10 --do_dagger --expert_data cs285/expert_data/expert_data_Ant-v4.pkl #--video_log_freq -1
+
+Eval_AverageReturn : 4713.7568359375
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4713.7568359375
+Eval_MinReturn : 4713.7568359375
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4681.891673935816
+Train_StdReturn : 30.70862278765526
+Train_MaxReturn : 4712.600296723471
+Train_MinReturn : 4651.18305114816
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.0068060442703275
+Training Loss : -1.9789094924926758
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 64.44036912918091
+Initial_DataCollection_AverageReturn : 4681.891673935816
+
+Eval_AverageReturn : 4829.42236328125
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4829.42236328125
+Eval_MinReturn : 4829.42236328125
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4757.09765625
+Train_StdReturn : 0.0
+Train_MaxReturn : 4757.09765625
+Train_MinReturn : 4757.09765625
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.015203595161438
+Training Loss : -2.390394687652588
+Train_EnvstepsSoFar : 1000
+TimeSinceStart : 67.04927802085876
+
+Eval_AverageReturn : 4587.6806640625
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4587.6806640625
+Eval_MinReturn : 4587.6806640625
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4777.6845703125
+Train_StdReturn : 0.0
+Train_MaxReturn : 4777.6845703125
+Train_MinReturn : 4777.6845703125
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 0.9602309465408325
+Training Loss : -2.5855698585510254
+Train_EnvstepsSoFar : 2000
+TimeSinceStart : 69.65763092041016
+
+Eval_AverageReturn : 4636.8330078125
+Eval_StdReturn : 306.710205078125
+Eval_MaxReturn : 4943.54296875
+Eval_MinReturn : 4330.12255859375
+Eval_AverageEpLen : 950.0
+Train_AverageReturn : 4598.2138671875
+Train_StdReturn : 0.0
+Train_MaxReturn : 4598.2138671875
+Train_MinReturn : 4598.2138671875
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.0083987712860107
+Training Loss : -2.026644706726074
+Train_EnvstepsSoFar : 3000
+TimeSinceStart : 72.86972403526306
+
+Eval_AverageReturn : 4844.53271484375
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4844.53271484375
+Eval_MinReturn : 4844.53271484375
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4695.6884765625
+Train_StdReturn : 0.0
+Train_MaxReturn : 4695.6884765625
+Train_MinReturn : 4695.6884765625
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.0316981077194214
+Training Loss : -2.5508508682250977
+Train_EnvstepsSoFar : 4000
+TimeSinceStart : 75.52123713493347
+
+Eval_AverageReturn : 4531.7734375
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4531.7734375
+Eval_MinReturn : 4531.7734375
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4870.26513671875
+Train_StdReturn : 0.0
+Train_MaxReturn : 4870.26513671875
+Train_MinReturn : 4870.26513671875
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 0.9304983019828796
+Training Loss : -2.588473320007324
+Train_EnvstepsSoFar : 5000
+TimeSinceStart : 135.99004006385803
+
+Eval_AverageReturn : 4708.044921875
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4708.044921875
+Eval_MinReturn : 4708.044921875
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4688.427734375
+Train_StdReturn : 0.0
+Train_MaxReturn : 4688.427734375
+Train_MinReturn : 4688.427734375
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.0041841268539429
+Training Loss : -2.5014302730560303
+Train_EnvstepsSoFar : 6000
+TimeSinceStart : 138.73369812965393
+
+Eval_AverageReturn : 4617.4970703125
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4617.4970703125
+Eval_MinReturn : 4617.4970703125
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4867.66015625
+Train_StdReturn : 0.0
+Train_MaxReturn : 4867.66015625
+Train_MinReturn : 4867.66015625
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 0.9486071467399597
+Training Loss : -2.5333776473999023
+Train_EnvstepsSoFar : 7000
+TimeSinceStart : 141.46960616111755
+
+Eval_AverageReturn : 4697.18505859375
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4697.18505859375
+Eval_MinReturn : 4697.18505859375
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4598.353515625
+Train_StdReturn : 0.0
+Train_MaxReturn : 4598.353515625
+Train_MinReturn : 4598.353515625
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.021492838859558
+Training Loss : -2.602891206741333
+Train_EnvstepsSoFar : 8000
+TimeSinceStart : 144.19318413734436
+
+Eval_AverageReturn : 4591.42626953125
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 4591.42626953125
+Eval_MinReturn : 4591.42626953125
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 4854.09375
+Train_StdReturn : 0.0
+Train_MaxReturn : 4854.09375
+Train_MinReturn : 4854.09375
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 0.9458874464035034
+Training Loss : -2.4839677810668945
+Train_EnvstepsSoFar : 9000
+TimeSinceStart : 146.96877908706665
+
+
+
+
+python cs285/scripts/run_hw1.py --expert_policy_file cs285/policies/experts/Walker2d.pkl --env_name Walker2d-v4 --exp_name dagger_walker2d --n_iter 10 --do_dagger --expert_data cs285/expert_data/expert_data_Walker2d-v4.pkl #--video_log_freq -1
+
+Eval_AverageReturn : 1106.3974609375
+Eval_StdReturn : 1227.394287109375
+Eval_MaxReturn : 3389.41015625
+Eval_MinReturn : 225.87265014648438
+Eval_AverageEpLen : 281.0
+Train_AverageReturn : 5383.310325177668
+Train_StdReturn : 54.15251563871789
+Train_MaxReturn : 5437.462840816386
+Train_MinReturn : 5329.1578095389505
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 0.20552362656168907
+Training Loss : -0.6667086482048035
+Train_EnvstepsSoFar : 0
+TimeSinceStart : 40.445019006729126
+Initial_DataCollection_AverageReturn : 5383.310325177668
+
+Eval_AverageReturn : 3250.216064453125
+Eval_StdReturn : 471.040283203125
+Eval_MaxReturn : 3721.25634765625
+Eval_MinReturn : 2779.17578125
+Eval_AverageEpLen : 661.5
+Train_AverageReturn : 2777.65087890625
+Train_StdReturn : 2084.084228515625
+Train_MaxReturn : 4861.7353515625
+Train_MinReturn : 693.5665893554688
+Train_AverageEpLen : 597.5
+Performance_Ratio : 1.1701312065124512
+Training Loss : -0.44878509640693665
+Train_EnvstepsSoFar : 1195
+TimeSinceStart : 43.06081819534302
+
+Eval_AverageReturn : 5342.158203125
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 5342.158203125
+Eval_MinReturn : 5342.158203125
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 2084.452392578125
+Train_StdReturn : 295.6907043457031
+Train_MaxReturn : 2381.607177734375
+Train_MinReturn : 1681.0736083984375
+Train_AverageEpLen : 458.0
+Performance_Ratio : 2.562859296798706
+Training Loss : -0.7036571502685547
+Train_EnvstepsSoFar : 2569
+TimeSinceStart : 45.55725717544556
+
+Eval_AverageReturn : 5330.1005859375
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 5330.1005859375
+Eval_MinReturn : 5330.1005859375
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 5294.57275390625
+Train_StdReturn : 0.0
+Train_MaxReturn : 5294.57275390625
+Train_MinReturn : 5294.57275390625
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.0067102909088135
+Training Loss : -0.7151025533676147
+Train_EnvstepsSoFar : 3569
+TimeSinceStart : 47.90237092971802
+
+Eval_AverageReturn : 5277.58251953125
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 5277.58251953125
+Eval_MinReturn : 5277.58251953125
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 5269.4013671875
+Train_StdReturn : 0.0
+Train_MaxReturn : 5269.4013671875
+Train_MinReturn : 5269.4013671875
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.0015525817871094
+Training Loss : -0.7552884221076965
+Train_EnvstepsSoFar : 4569
+TimeSinceStart : 50.23909592628479
+
+Eval_AverageReturn : 5447.21728515625
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 5447.21728515625
+Eval_MinReturn : 5447.21728515625
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 5407.3134765625
+Train_StdReturn : 0.0
+Train_MaxReturn : 5407.3134765625
+Train_MinReturn : 5407.3134765625
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.0073796510696411
+Training Loss : -0.9533146023750305
+Train_EnvstepsSoFar : 5569
+TimeSinceStart : 135.1425280570984
+
+Eval_AverageReturn : 5278.1240234375
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 5278.1240234375
+Eval_MinReturn : 5278.1240234375
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 5496.16455078125
+Train_StdReturn : 0.0
+Train_MaxReturn : 5496.16455078125
+Train_MinReturn : 5496.16455078125
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 0.9603285789489746
+Training Loss : -0.624724805355072
+Train_EnvstepsSoFar : 6569
+TimeSinceStart : 137.4392340183258
+
+Eval_AverageReturn : 5228.966796875
+Eval_StdReturn : 103.6845703125
+Eval_MaxReturn : 5332.6513671875
+Eval_MinReturn : 5125.2822265625
+Eval_AverageEpLen : 987.5
+Train_AverageReturn : 5362.455078125
+Train_StdReturn : 0.0
+Train_MaxReturn : 5362.455078125
+Train_MinReturn : 5362.455078125
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 0.9751068949699402
+Training Loss : -0.8392111659049988
+Train_EnvstepsSoFar : 7569
+TimeSinceStart : 141.25301122665405
+
+Eval_AverageReturn : 5377.7861328125
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 5377.7861328125
+Eval_MinReturn : 5377.7861328125
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 5331.27783203125
+Train_StdReturn : 0.0
+Train_MaxReturn : 5331.27783203125
+Train_MinReturn : 5331.27783203125
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 1.0087236166000366
+Training Loss : -1.1087524890899658
+Train_EnvstepsSoFar : 8569
+TimeSinceStart : 144.0158610343933
+
+Eval_AverageReturn : 5031.07568359375
+Eval_StdReturn : 0.0
+Eval_MaxReturn : 5031.07568359375
+Eval_MinReturn : 5031.07568359375
+Eval_AverageEpLen : 1000.0
+Train_AverageReturn : 5464.8125
+Train_StdReturn : 0.0
+Train_MaxReturn : 5464.8125
+Train_MinReturn : 5464.8125
+Train_AverageEpLen : 1000.0
+Performance_Ratio : 0.9206309914588928
+Training Loss : -1.0129501819610596
+Train_EnvstepsSoFar : 9569
+TimeSinceStart : 148.91821813583374
+
+dagger works well on both tasks:
+walker2d: as iteration increases, avg return keeps going up, loss keeps going down, performance gets more stable (std return gets smaller). much better than behavior cloning. during some iterations, better than expert.
+ant: has some effect on ant, not as big: avg return stays high, as training continues, loss decreases, and becomes more stable (std return decreases). worse than behavior cloning. almost as good as expert throughout.
